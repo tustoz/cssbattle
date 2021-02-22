@@ -1,0 +1,62 @@
+<div class="grid-container">
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+</div>
+<style>
+    * {
+        background-color: #E3516E;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .grid-container {
+        width: 200px;
+        height: 200px;
+        margin: 40px 90px;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+
+    }
+
+    .grid-container>div {
+        text-align: center;
+    }
+
+    .item1 {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 1;
+        background-color: #51B5A9;
+        border-radius: 0px 0px 100px 0px;
+        transform: rotate(180deg);
+    }
+
+    .item2 {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-row-end: 1;
+        background-color: #FADE8B;
+        border-radius: 0px 100px 0px 0px;
+    }
+
+    .item3 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        background-color: #F7F3D7;
+        border-radius: 0px 0px 100px 00px;
+        transform: rotate(90deg);
+    }
+
+    .item4 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        background-color: #E3516E;
+        border-radius: 0px 0px 1000px 0px;
+    }
+</style>
